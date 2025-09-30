@@ -11,8 +11,16 @@ end
 
 -- CONFIGURACIÓN
 local allowedUsernames = { -- NOMBRES EXACTOS (Name), no DisplayName
-    "keyler632"
-    "Thomas2345z"
+    "keyler632",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "thomas2345z",
 }
 local allowedUserIds = { -- OPCIONAL: añade IDs si quieres máxima fiabilidad
     -- 12345678, 987654321,
