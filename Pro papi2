@@ -1,3 +1,44 @@
+-- ======================================================
+-- WHITELIST ROBUSTO (PÉGALO AL INICIO DEL SCRIPT)
+-- ======================================================
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer  -- Debe ser LocalScript. Si es Script de servidor, no funcionará.
+
+if not player then
+    warn("[WHITELIST] Este script debe ejecutarse como LocalScript (LocalPlayer es nil).")
+    return
+end
+
+-- CONFIGURACIÓN
+local allowedUsernames = { -- NOMBRES EXACTOS (Name), no DisplayName
+    "keyler632"
+    "Thomas2345z"
+}
+local allowedUserIds = { -- OPCIONAL: añade IDs si quieres máxima fiabilidad
+    -- 12345678, 987654321,
+}
+
+-- Normaliza nombres a minúsculas para evitar fallos por mayúsculas
+local usernameSet = {}
+for _, n in ipairs(allowedUsernames) do
+    usernameSet[string.lower(n)] = true
+end
+
+local userIdSet = {}
+for _, id in ipairs(allowedUserIds) do
+    userIdSet[id] = true
+end
+
+-- Chequeo
+local nameKey = string.lower(player.Name)
+local isWhitelisted = usernameSet[nameKey] or userIdSet[player.UserId] or false
+
+if not isWhitelisted then
+    warn(string.format("[WHITELIST] %s (UserId %d) NO está autorizado. Abortando script.", player.Name, player.UserId))
+    return
+end
+
+print(string.format("[WHITELIST] Acceso permitido a %s (UserId %d).", player.Name, player.UserId))
 local Players = game:GetService("Players")
 local VirtualUser = game:GetService("VirtualUser")
 
@@ -14,7 +55,7 @@ print("Anti-AFK ativado!")
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/rafael25ic-blip/phoenix-cracked/refs/heads/main/Librerya%20Phoenix%20Crack"))()
 
 local window = library:AddWindow("Angel's_And_Keyzorxx Hub| By Keyzorxx", {
-    main_color = Color3.fromRGB(0, 0, 255),
+    main_color = Color3.fromRGB(207, 19, 19),
     min_size = Vector2.new(650, 870),
     can_resize = true,
 })
