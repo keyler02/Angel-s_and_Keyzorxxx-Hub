@@ -20,10 +20,10 @@ local allowedUsernames = { -- NOMBRES EXACTOS (Name), no DisplayName
     "",
     "",
     "",
-    "thomas2345z",
+    "",
 }
 local allowedUserIds = { -- OPCIONAL: añade IDs si quieres máxima fiabilidad
-    -- 12345678, 987654321,
+    -- , ,
 }
 
 -- Normaliza nombres a minúsculas para evitar fallos por mayúsculas
