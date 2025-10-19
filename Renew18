@@ -4413,9 +4413,9 @@ local ancientJungleRockSwitch = farmTab:AddSwitch("Ancient Jungle Rock", functio
                            game.Players.LocalPlayer.Character:FindFirstChild("LeftHand") and 
                            game.Players.LocalPlayer.Character:FindFirstChild("RightHand") then
  
-                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.RightHand, 1)
+                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.RightHand, 2)
                             firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.RightHand, 0)
-                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.LeftHand, 1)
+                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.LeftHand, 2)
                             firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.LeftHand, 0)
                             gettool()
                         end
