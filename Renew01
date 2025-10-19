@@ -13,7 +13,7 @@ end
 local allowedUsernames = { -- NOMBRES EXACTOS (Name), no DisplayName
     "keyler632",
     "ALT_XxG0D0FWARxX",
-    "thomas2345z",
+    "",
     "",
     "",
     "",
@@ -4386,9 +4386,9 @@ local muscleKingGymRockSwitch = farmTab:AddSwitch("Muscle King Gym Rock", functi
                            game.Players.LocalPlayer.Character:FindFirstChild("LeftHand") and 
                            game.Players.LocalPlayer.Character:FindFirstChild("RightHand") then
  
-                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.RightHand, 0)
                             firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.RightHand, 1)
-                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.LeftHand, 0)
+                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.RightHand, 1)
+                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.LeftHand, 1)
                             firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.LeftHand, 1)
                             gettool()
                         end
@@ -4413,9 +4413,9 @@ local ancientJungleRockSwitch = farmTab:AddSwitch("Ancient Jungle Rock", functio
                            game.Players.LocalPlayer.Character:FindFirstChild("LeftHand") and 
                            game.Players.LocalPlayer.Character:FindFirstChild("RightHand") then
  
-                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.RightHand, 0)
                             firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.RightHand, 1)
-                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.LeftHand, 0)
+                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.RightHand, 1)
+                            firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.LeftHand, 1)
                             firetouchinterest(v.Parent.Rock, game:GetService("Players").LocalPlayer.Character.LeftHand, 1)
                             gettool()
                         end
